@@ -1,0 +1,171 @@
+html {
+	margin: 0;padding: 0;
+	font-family: arial;overflow-x: hidden;
+}
+.is {
+	display: flex;
+	
+}
+.logo {
+	width: 45px;padding: 5px;
+}
+.navbar {
+	display: flex; justify-content: space-between;
+	align-items: center; padding: 2px;
+}
+.nav_ul {
+	display: flex; justify-content: space-between;
+}
+.nav_ul li {
+	list-style: none;font-size: 20px;
+	margin-left: 6px;
+	padding: 18px;
+	font-weight: bold;
+}
+.nav_ul li a {
+	text-decoration: none;
+	color: black;
+}
+.keranjang {
+	margin-right: 20px; width: 27px;
+	display: flex; justify-content: left;
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin-bottom: 5px;
+}
+.section1 {
+	background-image: url('../gambar/background2.png') ;
+	padding: 50px;
+	
+}
+.button {
+	border-radius: 15px; height: 44px;border:  1px solid black;font-size: 18px;
+	width: 185px;background: black;color: white;font-weight: bold;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, .4);cursor: pointer;
+}
+ 
+.bakso_img {
+	float: right;border-radius: 50%;box-shadow: 0px 10px 18px rgba(0, 0, 0, .5);
+	background-repeat: no-repeat;margin-right: 60px;
+}
+.caption {
+	margin-top: 50px ; margin-left: 120px;
+}
+.caption h1 {
+	font-family:  verdana; font-size: 43px;
+}
+.caption article {
+	margin-right: 20px;
+}
+.section2 {
+	margin-top: 50px;
+	clear: both;padding: 20px;
+	background:  white;
+}
+.menu {
+	width: 350px; height: 450px; box-shadow: 0px 5px 7px rgba(0, 0, 0, .3);
+	border-radius: 5px; text-align: center;
+}
+.menu:hover {
+	box-shadow:0px 6px 10px rgba(0, 0, 0, .3);
+	padding: 5px;animation: 2s ease-in-out;
+}
+.menu_list {
+ display: flex; justify-content: space-evenly;
+flex-wrap: wrap;
+}
+.menu_img {
+	width: 100px;
+}
+
+.close {
+	display: flex; justify-content: right;font-size: 25px; color: black;
+	cursor: pointer;
+}
+.Myorder {
+	width: 100%; display: none;z-index: 1;
+	height: 100%; background: whitesmoke;
+}
+.Myorder_content {
+	display: none;z-index: 2000;
+	position: fixed; top: 30%;left: 50%;box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
+	transform: translate(-50%, -50%);border-radius: 4px;
+	width: 500px; background: whitesmoke;padding: 10px;
+}
+.Myorder_content h1 {
+	text-align: center;
+}
+.Myorder_list {
+	margin-right: 37px;
+	border-bottom: 1px solid grey;
+}
+.Myorder_list li {
+	list-style: none;
+	border-radius: ;
+}
+.button_order {
+	width: 170px; height: 35px; padding: 2px; border-radius: 5px;
+	background: greenyellow;border: 1px solid greenyellow;font-size: 25px;
+	cursor: pointer; box-shadow: 0px 4px 9px rgba(0, 0, 0, .3);
+}
+.section3 {
+	background: grey;
+	padding: 20px;
+}
+.section3 .footer {
+	display: flex;
+	border-bottom: 1px solid black;
+	padding: 10px;
+}
+.footer ul li {
+	padding: 10px;
+	list-style: none;
+}
+@media(max-width: 678px) {
+	.nav_ul li {
+		display: none;
+		font-size: 15px;
+	}
+	.menu_list {
+
+		display: block;
+	}
+	.caption {
+		margin-left: 30px;
+		margin-top: 20px;
+		margin-right: -10px;
+	}
+	.section2 {
+		text-align: center;
+	}
+	.menu_list {
+		 flex-direction: column;
+    align-items: center;
+	}
+	.menu {
+		margin-top: 15px;
+		width: 90%;
+	}
+	
+	.section3 .footer {
+		display: block;
+	}
+	.is .open {
+		background: black;
+    display: block;z-index: ;
+    flex-direction: column;
+  }
+  .hamburger {
+    display: flex;justify-content: right;
+   margin-top: 7px;
+  }
+}

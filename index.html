@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head lang="id">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./asset/css/style.css">
+	<link  type="icon" href="./asset/gambar/logomie.jpg">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<title>Home || Mie Ayam</title>
+</head>
+<body>
+	<nav>
+		<div class="navbar">
+			<ul class="nav_ul">
+			<div>
+				<img src="./asset/gambar/logomie.jpg" class="logo">
+			</div >
+			<div class="is">
+				<li><a href="#" style="background: skyblue; padding: 4px; border-radius: 2px;">Home</a></li>
+				<li><a href="#active">Menu</a></li>
+				<li><a href="#active">Promo</a></li>
+				<li><a href="#footer">About</a></li></div>
+			</ul>
+			<div class="hamburger">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+			<div>
+				<img src="./asset/gambar/keranjang.ico" class="keranjang" id="keranjang">
+			</div>
+		</div>
+	</nav>
+
+	<main>
+		<div class="section1">
+			<div>
+				<img src="./asset/gambar/bakso2.png" class="bakso_img"><br><br>
+			</div>
+			<div class="caption">
+				<p style="color: red;">Mie Ayam Sepecial</p>
+				<h1 style="font-family: Montserrat;">Bakso <br> Dan Mie Ayam</h1>
+				<article style="font-family: Playfair Display, serif;
+  	font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;">
+					Tunggu apa lagi? Segera kunjungi restoran kami dan nikmati Mie Ayam Bakso yang lezat dan memuaskan. Kami berjanji, setiap suapan akan membawa Anda dalam perjalanan rasa yang luar biasa!
+				</article><br>
+				<button class="button"  onclick="AddOrder(3)">Order Now</button>
+			</div>
+		</div>
+		<br><br>
+
+		<div class="Myorder" id="myorder">
+			<div class="Myorder_content" id="myorder_content">
+				<span class="close">&times;</span>
+				<h1>Keranjang --CheckOut</h1>
+				<ul>
+					<div class="Myorder_list">
+						<img id="img_menu" style="width: 20px;">
+						<li class="nama"></li>
+						<li class="jmlorder"></li>
+						<li class="harga"></li>
+						<h4 style="text-align: center;" class="total"></h4>
+					</div>
+				</ul>
+				<div style="text-align: center;">
+					<button class="button_order" onclick="SendWhatsapp()">Whatsapp Me</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="section2">
+			<div>
+				<ul class="menu_list">
+					<div class="menu" id="active">
+						<br><br>
+						<br>
+						<img src="./asset/gambar/mie2.png" class="menu_img">
+						<h2>Mie Ayam</h2>
+						<p>*Dapatkan diskon sekarang juga!</p>
+						<p>Rp 12.0000,00</p>
+						<button class="button" onclick="AddOrder(1)">Order Now</button>
+					</div>
+					<div class="menu"><br><br><br><br>
+						<img src="./asset/gambar/bakso2.png" class="menu_img">
+						<h2>Bakso Sepesial</h2>
+						<p>*Dapatkan diskon sekarang juga!</p>
+						<p>Rp 13.0000,00</p>
+						<button class="button" onclick="AddOrder(2)">Order Now</button>
+					</div>
+					<div class="menu">
+						<img src="./asset/gambar/diskon.jpg" style="width: 50px;margin: 9px; display: flex; justify-content: right; transform: rotate(-45deg);">
+						<img src="./asset/gambar/bakso2.png" class="menu_img">
+						<h2>Mie Ayam Bakso Sepesial</h2>
+						<p>*Dapatkan diskon sekarang juga!</p>
+						<p>Rp 17.0000,00</p>
+						<button class="button" onclick="AddOrder(3)" >Order Now</button>
+					</div>
+				</ul>
+			</div>
+		</div>
+
+		<div class="section3" id="footer">
+			<div class="footer">
+				<ul>
+					<h1>Order</h1>
+					<li>Menu</li>
+					<li>Fax: 081717613281</li>
+					<li>Ilham Trihandoyo</li>
+					<li>Wa Me</li>
+				</ul>
+				<ul>
+					<h1>About</h1>
+					<li>About</li>
+					<li>Contact</li>
+					<li>Menu</li>
+				</ul>
+				<ul>
+					<h1>Adress</h1>
+					<li>Jl. Yos Sudarso, Gombong, Gombong, Kebumen</li>
+				</ul>
+			</div>
+
+			<div style="text-align: center;">
+				<p>@ Hak Cipta Dilindungi Oleh Undang Undang 2024</p>
+				<h3>Home || Menu || Order </h3>
+			</div>
+		</div>
+	</main>
+<script type="text/javascript" src="./asset/js/main.js"></script>
+</body>
+</html>
