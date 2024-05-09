@@ -19,10 +19,15 @@ function AddOrder(add) {
 		var img = produk[add].img;
 		var name1 = produk[add].name;
 		var jumlah = parseInt(prompt("Masukkan Jumlah Order"));
-		var harga = produk[add].harga * jumlah;
-		alert("Produk yang ke "+ name + " Harga : "+ harga);
-		alert("Cek keranjang Anda")
-		AddKeranjang(name1, harga, jumlah);
+		if(jumlah == NaN ) {
+			alert("Gagal, Silahkan Coba Lagi")
+		}else {
+			var harga = produk[add].harga * jumlah;
+			alert("Produk yang ke "+ name + " Harga : "+ harga);
+			alert("Cek keranjang Anda")
+			AddKeranjang(name1, harga, jumlah);
+		}
+		
 	}
 	else {
 		alert("Gagal Order , Silahkan Order lagi")
@@ -44,8 +49,14 @@ function AddKeranjang (name1, harga, jmlorder) {
 }
 
 function SendWhatsapp(nama, value) {
-		const UrlWhatsapp = `https://wa.me/6281717613281?text=Selamat Siang, saya mau pesan : ${setItems[0]} <br> Total Harga :Rp. ${setItems[1]} <br>Jumlah Order : ${setItems[2]}`; 
-		window.open(UrlWhatsapp, "_blank")
+	try{
+		setTimeout(()=> {
+			const UrlWhatsapp = `https://wa.me/6281717613281?text=Selamat Siang, saya mau pesan : ${setItems[0]} <br> Total Harga :Rp. ${setItems[1]} <br>Jumlah Order : ${setItems[2]}`; 
+			window.open(UrlWhatsapp, "_blank")
+		}, 500);
+	}catch(err) {
+		alert("Eroro", err)
+	}	
 } 
 
 const klik = document.querySelector(".keranjang"); 
@@ -68,7 +79,6 @@ close.addEventListener("click", ()=> {
 	myorder.style.display = "none"
 	myorder_content.style.display = "none"
 })
-
 
 const hamburger = document.querySelector(".hamburger");
 const nav = document.querySelector(".is");
