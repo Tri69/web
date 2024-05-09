@@ -22,10 +22,20 @@ function AddOrder(add) {
 		if(jumlah == NaN ) {
 			alert("Gagal, Silahkan Coba Lagi")
 		}else {
-			var harga = produk[add].harga * jumlah;
-			alert("Produk yang ke "+ name + " Harga : "+ harga);
-			alert("Cek keranjang Anda")
-			AddKeranjang(name1, harga, jumlah);
+			if(produk[add] == 3) {
+				var j = produk[add].harga * jumlah;
+				var diskon = j * 0.2;
+				var harga = j - diskon;
+				alert("Produk yang ke "+ name + " Harga : "+ harga);
+				alert("Cek keranjang Anda")
+				AddKeranjang(name1, harga, jumlah);
+			}else {
+				var harga = produk[add].harga * jumlah;
+				alert("Produk yang ke "+ name + " Harga : "+ harga);
+				alert("Cek keranjang Anda")
+				AddKeranjang(name1, harga, jumlah);
+			}
+			
 		}
 		
 	}
