@@ -22,7 +22,7 @@ function AddOrder(add) {
 		if(jumlah == NaN ) {
 			alert("Gagal, Silahkan Coba Lagi")
 		}else {
-			if(produk[add] == 3) {
+			if(add == 3) {
 				var j = produk[add].harga * jumlah;
 				var diskon = j * 0.2;
 				var harga = j - diskon;
