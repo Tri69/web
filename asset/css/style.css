@@ -96,7 +96,7 @@ flex-wrap: wrap;
 	display: none;z-index: 2000;
 	position: fixed; top: 30%;left: 50%;box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
 	transform: translate(-50%, -50%);border-radius: 4px;
-	width: 390px; background: whitesmoke;padding: 5px;
+	width: 350px; background: whitesmoke;padding: 5px;
 }
 .Myorder_content h1 {
 	text-align: center;
@@ -150,7 +150,7 @@ flex-wrap: wrap;
 	}
 	.menu {
 		margin-top: 15px;
-		width: 95%;
+		width: 97%;
 	}
 	.section3 .footer {
 		display: block;
