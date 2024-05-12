@@ -31,7 +31,7 @@ function AddOrder(add) {
 				AddKeranjang(name1, harga, jumlah);
 			}else {
 				var harga = produk[add].harga * jumlah;
-				alert("Produk yang ke "+ name + " Harga : "+ harga);
+				alert("Name Produk : "+ name1 + " Harga : "+ harga);
 				alert("Cek keranjang Anda")
 				AddKeranjang(name1, harga, jumlah);
 			}
