@@ -6,6 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="./asset/css/style.css">
 	<link  type="icon" href="./asset/gambar/logomie.jpg">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<title>Home || Mie Ayam</title>
@@ -36,16 +38,16 @@
 
 	<main>
 		<div class="section1">
-			<div>
+			<div data-aos="fade-right">
 				<img src="./asset/gambar/bakso2.png" class="bakso_img"><br><br>
 			</div>
-			<div class="caption">
+			<div class="caption" data-aos="fade-left">
 				<p style="color: red;">Mie Ayam Sepecial</p>
 				<h1 style="font-family: Montserrat;">Bakso <br> Dan Mie Ayam</h1>
 				<article style="font-family: Playfair Display, serif;
   	font-optical-sizing: auto;
   font-weight: 200;
-  font-style: normal;">
+  font-style: normal;" >
 					Tunggu apa lagi? Segera kunjungi restoran kami dan nikmati Mie Ayam Bakso yang lezat dan memuaskan. Kami berjanji, setiap suapan akan membawa Anda dalam perjalanan rasa yang luar biasa!
 				</article><br>
 				<button class="button"  onclick="AddOrder(3)">Order Now</button>
@@ -75,7 +77,7 @@
 		<div class="section2">
 			<div>
 				<ul class="menu_list">
-					<div class="menu" id="active">
+					<div class="menu" id="active" data-aos="fade-right">
 						<br><br>
 						<br>
 						<img src="./asset/gambar/mie2.png" class="menu_img">
@@ -84,14 +86,14 @@
 						<p>Rp 12.0000,00</p>
 						<button class="button" onclick="AddOrder(1)">Order Now</button>
 					</div>
-					<div class="menu"><br><br><br><br>
+					<div class="menu" data-aos="fade-left"><br><br><br><br>
 						<img src="./asset/gambar/bakso2.png" class="menu_img">
 						<h2>Bakso Sepesial</h2>
 						<p>*Dapatkan diskon sekarang juga!</p>
 						<p>Rp 13.0000,00</p>
 						<button class="button" onclick="AddOrder(2)">Order Now</button>
 					</div>
-					<div class="menu">
+					<div class="menu" data-aos="fade-right">
 						<img src="./asset/gambar/diskon.jpg" style="width: 50px;margin: 9px; display: flex; justify-content: right; transform: rotate(-45deg);">
 						<img src="./asset/gambar/bakso2.png" class="menu_img">
 						<h2>Mie Ayam Bakso Sepesial</h2>
@@ -104,7 +106,7 @@
 		</div>
 
 		<div class="section3" id="footer">
-			<div class="footer">
+			<div class="footer" data-aos="fade-left">
 				<ul>
 					<h1>Order</h1>
 					<li>Menu</li>
@@ -131,5 +133,8 @@
 		</div>
 	</main>
 <script type="text/javascript" src="./asset/js/main.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
