@@ -61,7 +61,7 @@ function AddKeranjang (name1, harga, jmlorder) {
 function SendWhatsapp(nama, value) {
 	try{
 		setTimeout(()=> {
-			const UrlWhatsapp = `https://wa.me/6281717613281?text=Selamat Siang, saya mau pesan : ${setItems[0]} <br> Total Harga :Rp. ${setItems[1]} <br>Jumlah Order : ${setItems[2]}`; 
+			const UrlWhatsapp = `https://wa.me/6287718625070?text=Selamat Siang, saya mau pesan : ${setItems[0]} <br> Total Harga :Rp. ${setItems[1]} <br>Jumlah Order : ${setItems[2]}`; 
 			window.open(UrlWhatsapp, "_blank")
 		}, 500);
 	}catch(err) {
