@@ -93,7 +93,7 @@ flex-wrap: wrap;
 	height: 100%; background: whitesmoke;
 }
 .Myorder_content {
-	display: none;z-index: 2000;
+	display: none;z-index: 2000;left:45%;
 	position: fixed; top: 30%;box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
 	transform: translate(-50%, -50%);border-radius: 4px;
 	width: 360px; background: whitesmoke;padding: 5px;
